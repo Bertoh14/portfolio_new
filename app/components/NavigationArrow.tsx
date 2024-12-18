@@ -26,7 +26,7 @@ const NavigationArrow: React.FC<NavigationArrowProps> = ({
   };
 
   const styles =
-    direction === "right" ? "right-[-5%]" : "left-[-5%] rotate-180";
+    direction === "right" ? "right-[-5%]" : "left-[-5%] scale-x-[-1]";
 
   return (
     <div

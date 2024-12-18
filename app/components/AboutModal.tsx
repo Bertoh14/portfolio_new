@@ -1,6 +1,6 @@
 import React from "react";
 
-const selfImage = "../assets/nathanielyu.jpg";
+const selfImage = "../assets/Profile.jpg";
 const BackSfx = "/assets/back.mp3";
 
 // Define the type for props
@@ -29,12 +29,18 @@ const AboutModal: React.FC<AboutModalProps> = ({ openAbout, closeAbout }) => (
           <div className="lg:w-1/2 w-full p-4">
             <img
               src={selfImage}
-              alt="Nathaniel Yu"
+              alt="Robert Oh"
               className="w-3/4 lg:w-2/3 mx-auto h-auto object-cover rounded-md shadow-lg"
             />
+            {/* <img
+              src={selfImage}
+              alt="Robert Oh"
+              className="w-3/4 lg:w-2/3 mx-auto h-auto object-cover rounded-md shadow-lg"
+            /> */}
           </div>
           <div className="lg:w-1/2 w-full p-4">
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
+            {/* Change Text here */}
             <p>Hello! I&apos;m Nathaniel Yu, a data scientist with a strong foundation in business and web development. I hold a B.S. in Business Administration from USC and an M.S. in Information Management from National Taiwan University of Science and Technology. My journey in data science has involved developing advanced machine learning models and implementing innovative data processing techniques. I also work as a freelance web developer, helping clients enhance their online presence with modern web technologies. Let&apos;s connect and explore how we can collaborate on exciting projects!
             </p>
           </div>

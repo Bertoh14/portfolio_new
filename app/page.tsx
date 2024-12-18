@@ -13,7 +13,8 @@ import Mobile from "./components/Mobile";
 import WelcomeScreen from "./components/Welcome";
 
 // ChannelBg Videos
-// const Video1 = "/assets/Video1.mp4";
+const Video1 = "/assets/Lil_Fishsticks.mp4";
+const Video2 = "/assets/Trojan_Course.mp4";
 
 // ChannelBg Components
 import Disc from "./components/ChannelBgs/Disc";
@@ -39,13 +40,20 @@ const webChannels: Channels = {
     complete: false,
     component: Disc,
   },
-  // 2: {
-  //   title: "Project 1",
-  //   complete: true,
-  //   link: "https://www.google.com",
-  //   channelBg: Video1,
-  //   isVideo: true,
-  // },
+  2: {
+    title: "Fish",
+    complete: true,
+    link: "https://www.google.com",
+    channelBg: Video1,
+    isVideo: true,
+  },
+  3: {
+    title: "Trojan",
+    complete: true,
+    link: "https://www.google.com",
+    channelBg: Video2,
+    isVideo: true,
+  },
 };
 
 type ChannelState = {

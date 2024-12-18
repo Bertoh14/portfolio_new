@@ -116,7 +116,7 @@ const Footer: React.FC<FooterProps> = ({ openContact, openAbout }) => {
               </svg>
             </div>
           </button>
-          <div className="fixed top-[-12.5%] left-[4%] z-10 rounded-full bg-neutral-50 px-8 py-1 text-3xl font-light text-center text-neutral-500 shadow-sm border-2 border-neutral-400 transition-all delay-0 duration-300 scale-100 pointer-events-none opacity-0 group-hover/about:opacity-100 group-hover/about:delay-300 group-hover/about:duration-300 group-hover/about:scale-105">
+          <div className="absolute top-[-12.5%] left-[4%] z-10 rounded-full bg-neutral-50 px-8 py-1 text-3xl font-light text-center text-neutral-500 shadow-sm border-2 border-neutral-400 transition-all delay-0 duration-300 scale-100 pointer-events-none opacity-0 group-hover/about:opacity-100 group-hover/about:delay-300 group-hover/about:duration-300 group-hover/about:scale-105">
             About Me
           </div>
         </div>

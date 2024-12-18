@@ -56,7 +56,7 @@ const ChannelViewer: React.FC<ChannelViewerProps> = ({
             <video
               className="absolute inset-0 w-full h-full object-cover rounded-[8rem_8rem_0_0]"
               autoPlay
-              muted
+              //muted
               loop
               playsInline
             >

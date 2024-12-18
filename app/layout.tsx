@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Nathaniel Yu",
+  title: "Robert Oh Portfolio",
   description: "Portfolio template designed and coded by Nathaniel Yu.",
 };
 

@@ -3,7 +3,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const Contact: React.FC = () => {
   const handleEmailClick = () => {
-    window.location.href = "mailto:nathanielyu917@gmail.com";
+    window.location.href = "mailto:robbyoh@gmail.com";
   };
 
   return (
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
           <button
             className="w-16 h-16 rounded-full flex items-center justify-center transform hover:scale-110 transition duration-300 ease-in-out text-neutral-600 shadow-md border-2 border-cyan-400"
             onClick={() =>
-              window.open("https://linkedin.com/in/nathaniel-yu", "_blank")
+              window.open("https://linkedin.com/in/robbyoh", "_blank")
             }
             aria-label="LinkedIn Profile"
           >
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
 
           <button
             className="w-16 h-16 rounded-full flex items-center justify-center transform hover:scale-110 transition duration-300 ease-in-out text-neutral-600 shadow-md border-2 border-cyan-400"
-            onClick={() => window.open("https://github.com/nartexyu", "_blank")}
+            onClick={() => window.open("https://github.com/Bertoh14", "_blank")}
             aria-label="GitHub Profile"
           >
             <GitHubIcon className="h-6 w-6" />
