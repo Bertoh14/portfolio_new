@@ -41,7 +41,7 @@ const AboutModal: React.FC<AboutModalProps> = ({ openAbout, closeAbout }) => (
           <div className="lg:w-1/2 w-full p-4">
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
             {/* Change Text here */}
-            <p>Hello! My name is Robert Oh, and I'm currently looking for opportunities to develop my game design/development skills! I graduated from Carnegie Mellon University in 2020 with a B.S. in Statistics and Machine Learning and a minor in Game Design. I have 2 years of industry experience as a Machine Learning Engineer at Workday, and 2 years as a Software Engineer at Amazon. I'm currently pursuing my Master's degree in Game Design and Science at Northeastern University. I've showcased some of the best games I've created here on this portfolio website- let's connect if you'd like to collaborate with me to create fun, exciting games!
+            <p>Hello! My name is Robert Oh, and I&apos;m currently looking for opportunities to develop my game design/development skills! I graduated from Carnegie Mellon University in 2020 with a B.S. in Statistics and Machine Learning and a minor in Game Design. I have 2 years of industry experience as a Machine Learning Engineer at Workday, and 2 years as a Software Engineer at Amazon. I&apos;m currently pursuing my Master&apos;s degree in Game Design and Science at Northeastern University. I&apos;ve showcased some of the best games I&apos;ve created here on this portfolio website- let&apos;s connect if you&apos;d like to collaborate with me to create fun, exciting games!
             </p>
           </div>
         </div>
