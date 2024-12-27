@@ -41,7 +41,7 @@ const AboutModal: React.FC<AboutModalProps> = ({ openAbout, closeAbout }) => (
           <div className="lg:w-1/2 w-full p-4">
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
             {/* Change Text here */}
-            <p>Hello! I&apos;m Nathaniel Yu, a data scientist with a strong foundation in business and web development. I hold a B.S. in Business Administration from USC and an M.S. in Information Management from National Taiwan University of Science and Technology. My journey in data science has involved developing advanced machine learning models and implementing innovative data processing techniques. I also work as a freelance web developer, helping clients enhance their online presence with modern web technologies. Let&apos;s connect and explore how we can collaborate on exciting projects!
+            <p>Hello! My name is Robert Oh, and I'm currently looking for opportunities to develop my game design/development skills! I graduated from Carnegie Mellon University in 2020 with a B.S. in Statistics and Machine Learning and a minor in Game Design. I have 2 years of industry experience as a Machine Learning Engineer at Workday, and 2 years as a Software Engineer at Amazon. I'm currently pursuing my Master's degree in Game Design and Science at Northeastern University. I've showcased some of the best games I've created here on this portfolio website- let's connect if you'd like to collaborate with me to create fun, exciting games!
             </p>
           </div>
         </div>

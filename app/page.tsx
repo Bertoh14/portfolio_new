@@ -15,9 +15,12 @@ import WelcomeScreen from "./components/Welcome";
 // ChannelBg Videos
 const Video1 = "/assets/Lil_Fishsticks.mp4";
 const Video2 = "/assets/Trojan_Course.mp4";
+const Video3 = "/assets/QuadTask.mp4"
 
 // ChannelBg Components
 import Disc from "./components/ChannelBgs/Disc";
+import Fish from "./components/ChannelBgs/Fish";
+import Horse from "./components/ChannelBgs/Horse";
 
 // Define the type for a single channel
 type Channel = {
@@ -36,23 +39,27 @@ type Channels = {
 
 const webChannels: Channels = {
   1: {
-    title: "Hello!",
+    title: "Lil Fishsticks",
     complete: false,
-    component: Disc,
-  },
-  2: {
-    title: "Fish",
-    complete: true,
-    link: "https://www.google.com",
+    //link: "https://www.google.com",
     channelBg: Video1,
     isVideo: true,
+    component: Fish,
   },
-  3: {
-    title: "Trojan",
-    complete: true,
-    link: "https://www.google.com",
+  2: {
+    title: "The Trojan Course",
+    complete: false,
+    //link: "https://www.google.com",
     channelBg: Video2,
     isVideo: true,
+    component: Horse,
+  },
+  3: {
+    title: "QuadTask",
+    complete: false,
+    channelBg: Video3,
+    isVideo: true,
+    component: Disc,
   },
 };
 
@@ -154,7 +161,9 @@ function Home() {
     <div>
       <Mobile />
       {showWelcome ? (
-        <WelcomeScreen onContinue={() => setShowWelcome(false)} />
+        <WelcomeScreen onContinue={() => setShowWelcome(false)} 
+        logoSrc='/assets/me.png'
+        />
       ) : (
         <div
           className={`transition-opacity duration-100 ${

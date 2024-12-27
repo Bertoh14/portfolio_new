@@ -5,11 +5,13 @@ const ClickSfx = "/assets/click.mp3";
 // Define the type for props
 interface WelcomeScreenProps {
   onContinue: () => void; // Function to handle continuation
+  logoSrc: string; // Source URL or path for the logo image
 }
 
-const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onContinue }) => {
+const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onContinue, logoSrc }) => {
   const [isTextFading, setIsTextFading] = useState(false);
   const [isBackgroundFading, setIsBackgroundFading] = useState(false);
+  logoSrc = "assets/me.png";
 
   const handleContinue = () => {
     setIsTextFading(true);
@@ -21,7 +23,7 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onContinue }) => {
 
   return (
     <div
-      className={`flex items-center justify-center h-screen bg-black text-white text-center p-4 cursor-pointer transition-opacity duration-500 ${
+      className={`flex flex-col items-center justify-center h-screen bg-black text-white text-center p-4 cursor-pointer transition-opacity duration-500 ${
         isBackgroundFading ? "opacity-0" : "opacity-100"
       }`}
       onClick={() => {
@@ -30,6 +32,15 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onContinue }) => {
         handleContinue();
       }}
     >
+      {/* Logo Image */}
+      <div className="w-full flex justify-center mb-8">
+        <img
+          src={logoSrc}
+          alt="Welcome Logo"
+          className="w-32 h-auto rounded-full" // Adjust size as needed
+        />
+      </div>
+
       <div
         className={`max-w-5xl transition-opacity duration-500 ${
           isTextFading ? "opacity-0" : "opacity-100"

@@ -11,9 +11,8 @@ interface ChannelState {
   channelNum: number | null;
   channelBg?: string;
   isVideo?: boolean;
-  channelLink: string | null; 
+  channelLink: string | null;
 }
-
 
 // Define the props type
 interface ChannelViewerProps {
@@ -53,25 +52,32 @@ const ChannelViewer: React.FC<ChannelViewerProps> = ({
         >
           {/* Conditional Rendering for Video */}
           {channelState.isVideo ? (
-            <video
-              className="absolute inset-0 w-full h-full object-cover rounded-[8rem_8rem_0_0]"
-              autoPlay
-              //muted
-              loop
-              playsInline
-            >
-              <source src={channelState.channelBg} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            // Static Image Background
-            <div
-              className="absolute inset-0 w-full h-full bg-cover rounded-[8rem_8rem_0_0]"
-              style={{
-                backgroundImage: `url(${channelState.channelBg})`,
-              }}
-            ></div>
-          )}
+  <div
+    className="absolute inset-0 w-full h-full rounded-[8rem_8rem_0_0] overflow-hidden"
+    style={{
+      clipPath: "inset(0 round 8rem 8rem 0 0)", // Ensures video respects the rounded corners
+    }}
+  >
+    <video
+      className="w-full h-full object-contain"
+      autoPlay
+      //muted
+      loop
+      playsInline
+    >
+      <source src={channelState.channelBg} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+) : (
+  // Static Image Background
+  <div
+    className="absolute inset-0 w-full h-full bg-cover rounded-[8rem_8rem_0_0]"
+    style={{
+      backgroundImage: `url(${channelState.channelBg})`,
+    }}
+  ></div>
+)}
 
           {/* Navigation Buttons */}
           <div
