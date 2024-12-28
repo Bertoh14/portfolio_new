@@ -77,9 +77,9 @@ const ChannelViewer: React.FC<ChannelViewerProps> = ({
     </div>
 
   {/* Text Section */}
-  <div className="h-full w-1/3 flex flex-col justify-center items-start p-6 text-neutral-800">
+  <div className="h-full w-1/3 flex flex-col justify-start items-center p-6 text-neutral-800">
     <h1 className="text-4xl font-bold mb-4">Channel {channelState.channelNum}</h1>
-    <p className="text-xl leading-relaxed">{channelState.channelText}</p>
+    <p className="text-xl text-center leading-relaxed text-justify"> &emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{channelState.channelText}</p>
   </div>
 
           {/* Right Arrow */}
