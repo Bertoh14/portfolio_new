@@ -71,6 +71,7 @@ type ChannelState = {
   channelLink: string | null; 
   channelBg?: string;
   isVideo?: boolean;
+  channelText?: string; // New property for channel-specific text
 };
 
 
