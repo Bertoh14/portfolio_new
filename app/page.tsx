@@ -15,12 +15,16 @@ import WelcomeScreen from "./components/Welcome";
 // ChannelBg Videos
 const Video1 = "/assets/Lil_Fishsticks.mp4";
 const Video2 = "/assets/Trojan_Course.mp4";
-const Video3 = "/assets/QuadTask.mp4"
+const Video3 = "/assets/Forest_Foodies.mp4";
+const Video4 = "/assets/Sashimi.mp4";
+const Video5 = "/assets/QuadTask.mp4"
 
 // ChannelBg Components
 import Disc from "./components/ChannelBgs/Disc";
 import Fish from "./components/ChannelBgs/Fish";
 import Horse from "./components/ChannelBgs/Horse";
+import Frog from "./components/ChannelBgs/Frog";
+import RainbowFish from "./components/ChannelBgs/RainbowFish";
 
 // Define the type for a single channel
 type Channel = {
@@ -40,24 +44,39 @@ type Channels = {
 const webChannels: Channels = {
   1: {
     title: "Lil Fishsticks",
-    complete: false,
-    //link: "https://www.google.com",
+    complete: true,
+    link: "https://youtu.be/us2F17We7Ek",
     channelBg: Video1,
     isVideo: true,
     component: Fish,
   },
   2: {
     title: "The Trojan Course",
-    complete: false,
-    //link: "https://www.google.com",
+    complete: true,
+    link: "https://youtu.be/--M5cR13mKU",
     channelBg: Video2,
     isVideo: true,
     component: Horse,
   },
   3: {
+    title: "Forest Foodies",
+    complete: true,
+    link: "https://geekguy100.itch.io/forest-foodies",
+    channelBg: Video3,
+    isVideo: true,
+    component: Frog,
+  },
+  4: {
+    title: "Sashimi",
+    complete: false,
+    channelBg: Video4,
+    isVideo: true,
+    component: RainbowFish,
+  },
+  5: {
     title: "QuadTask",
     complete: false,
-    channelBg: Video3,
+    channelBg: Video5,
     isVideo: true,
     component: Disc,
   },

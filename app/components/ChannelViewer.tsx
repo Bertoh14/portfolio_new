@@ -148,6 +148,7 @@ const ChannelViewer: React.FC<ChannelViewerProps> = ({
               href={channelState.channelLink || '#'}
               target="_blank"
               rel="noreferrer"
+              className="block w-full h-full flex items-center justify-center"
               onClick={() => {
                 const audio = new Audio(EnterSfx);
                 audio.play();
