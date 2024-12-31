@@ -34,6 +34,9 @@ type Channel = {
   link?: string;
   channelBg?: string;
   isVideo?: boolean;
+  channelName: string;
+  channelText: string;
+  channelRoles: string;
 };
 
 // Define the channels object type
@@ -49,6 +52,9 @@ const webChannels: Channels = {
     channelBg: Video1,
     isVideo: true,
     component: Fish,
+    channelName: "Lil Fishsticks",
+    channelText: "What happens when you flush your presumed dead pet fish down the toilet? Of course he'll grow legs from the toxic waste and platform his way back home! Help guide Freddie through the sewer system to solve puzzles, avoid enemies, and find the exit! There are many different ecosystems that Freddie will have to navigate his way through. Will you be able to return him to his owner?",
+    channelRoles: "Roles: Game Designer, Game Developer, Level Designer, Sound Designer"
   },
   2: {
     title: "The Trojan Course",
@@ -57,6 +63,9 @@ const webChannels: Channels = {
     channelBg: Video2,
     isVideo: true,
     component: Horse,
+    channelName: "The Trojan Course",
+    channelText: "In The Trojan Course, create different-shaped Trojan Horses to withstand the obstacle course ahead of you! With our course preview system, create an optimized horse that'll survive to reach the Gates of Troy! With dozens of different courses, and many different customizable blocks, will you be able to sneak your way behind enemy lines?",
+    channelRoles: "Roles: Game Designer, Game Developer, Level Designer, Sound Designer",
   },
   3: {
     title: "Forest Foodies",
@@ -65,6 +74,9 @@ const webChannels: Channels = {
     channelBg: Video3,
     isVideo: true,
     component: Frog,
+    channelName: "Forest Foodies",
+    channelText: "My team created Forest Foodies for the GMTK Game Jam 2024. As the theme of this game jam was 'Built To Scale', we created a game with a scaling micromanagement system. Control these cute forest animals to gather resources, buy new animals, and complete your dish. Just make sure to finish before night falls! Enjoy playing our game by clicking the 'Start' Button below!",
+    channelRoles: "Roles: Game Designer, SFX Designer",
   },
   4: {
     title: "Sashimi",
@@ -72,6 +84,9 @@ const webChannels: Channels = {
     channelBg: Video4,
     isVideo: true,
     component: RainbowFish,
+    channelName: "Sashimi",
+    channelText: "Sashimi is a school project designed as a puzzle-platformer for children. Our school program partnered with a local middle school to collaborate with middle school students. We were able to tailor the gameplay mechanics, artstlye, and sound designs to the children's preferences. Help this Rainbow Fish migrate to the ocean, while obtaining body-altering power-ups along the way!",
+    channelRoles: "Roles: Game Designer, Level Designer, Art Designer",
   },
   5: {
     title: "QuadTask",
@@ -79,6 +94,9 @@ const webChannels: Channels = {
     channelBg: Video5,
     isVideo: true,
     component: Disc,
+    channelName: "QuadTask",
+    channelText: "This is one of the first games I've created! For my final project for a computing class, I created a multi-tasking game called QuadTask using p5.js. The goal of the game is to survive as long as you can in all 4 quadrants of the screen. Each quadrant has its own controls (space, left/right, up/down, click). Once you die in even one section, the game is over!",
+    channelRoles: "Game Designer, Game Developer, Art Designer",
   },
 };
 
@@ -90,7 +108,9 @@ type ChannelState = {
   channelLink: string | null; 
   channelBg?: string;
   isVideo?: boolean;
-  channelText?: string; // New property for channel-specific text
+  channelName: string | null;
+  channelText: string | null; // New property for channel-specific text
+  channelRoles: string | null;
 };
 
 
@@ -103,6 +123,9 @@ function Home() {
     channelNum: null,
     channelComponent: null,
     channelLink: null,
+    channelName: null,
+    channelText: null,
+    channelRoles: null,
   });
   const [openContact, setOpenContact] = useState<boolean>(false);
   const [openAbout, setOpenAbout] = useState<boolean>(false);
@@ -129,6 +152,9 @@ function Home() {
       channelLink: webChannels[channelNum].link || null,
       channelBg: webChannels[channelNum].channelBg,
       isVideo: webChannels[channelNum].isVideo,
+      channelName: webChannels[channelNum].channelName || null,
+      channelText: webChannels[channelNum].channelText || null,
+      channelRoles: webChannels[channelNum].channelRoles || null,
     }));
   };
 
@@ -152,6 +178,9 @@ function Home() {
       channelLink: webChannels[nextChannelNum].link || null,
       channelBg: webChannels[nextChannelNum].channelBg,
       isVideo: webChannels[nextChannelNum].isVideo,
+      channelName: webChannels[nextChannelNum].channelName,
+      channelText: webChannels[nextChannelNum].channelText,
+      channelRoles: webChannels[nextChannelNum].channelRoles,
     });
   };
 
@@ -166,6 +195,9 @@ function Home() {
       channelNum: null,
       channelComponent: null,
       channelLink: null,
+      channelName: null,
+      channelText: null,
+      channelRoles: null,
     });
   };
 
