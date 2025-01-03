@@ -54,7 +54,7 @@ const webChannels: Channels = {
     component: Fish,
     channelName: "Lil Fishsticks",
     channelText: "What happens when you flush your presumed dead pet fish down the toilet? Of course he'll grow legs from the toxic waste and platform his way back home! Help guide Freddie through the sewer system to solve puzzles, avoid enemies, and find the exit! There are many different ecosystems that Freddie will have to navigate his way through. Will you be able to return him to his owner?",
-    channelRoles: "Roles: Game Designer, Game Developer, Level Designer, Sound Designer"
+    channelRoles: "Game Designer, Game Developer, Level Designer, Sound Designer"
   },
   2: {
     title: "The Trojan Course",
@@ -65,7 +65,7 @@ const webChannels: Channels = {
     component: Horse,
     channelName: "The Trojan Course",
     channelText: "In The Trojan Course, create different-shaped Trojan Horses to withstand the obstacle course ahead of you! With our course preview system, create an optimized horse that'll survive to reach the Gates of Troy! With dozens of different courses, and many different customizable blocks, will you be able to sneak your way behind enemy lines?",
-    channelRoles: "Roles: Game Designer, Game Developer, Level Designer, Sound Designer",
+    channelRoles: "Game Designer, Game Developer, Level Designer, Sound Designer",
   },
   3: {
     title: "Forest Foodies",
@@ -76,7 +76,7 @@ const webChannels: Channels = {
     component: Frog,
     channelName: "Forest Foodies",
     channelText: "My team created Forest Foodies for the GMTK Game Jam 2024. As the theme of this game jam was 'Built To Scale', we created a game with a scaling micromanagement system. Control these cute forest animals to gather resources, buy new animals, and complete your dish. Just make sure to finish before night falls! Enjoy playing our game by clicking the 'Start' Button below!",
-    channelRoles: "Roles: Game Designer, SFX Designer",
+    channelRoles: "Game Designer, SFX Designer",
   },
   4: {
     title: "Sashimi",
@@ -86,7 +86,7 @@ const webChannels: Channels = {
     component: RainbowFish,
     channelName: "Sashimi",
     channelText: "Sashimi is a school project designed as a puzzle-platformer for children. Our school program partnered with a local middle school to collaborate with middle school students. We were able to tailor the gameplay mechanics, artstlye, and sound designs to the children's preferences. Help this Rainbow Fish migrate to the ocean, while obtaining body-altering power-ups along the way!",
-    channelRoles: "Roles: Game Designer, Level Designer, Art Designer",
+    channelRoles: "Game Designer, Level Designer, Art Designer",
   },
   5: {
     title: "QuadTask",
