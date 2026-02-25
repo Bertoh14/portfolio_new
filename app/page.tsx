@@ -21,7 +21,7 @@ const Video5 = "/assets/DisasterDeck.mp4";
 const Video6 = "/assets/KnifeArena.mp4";
 
 // ChannelBg Components
-import Disc from "./components/ChannelBgs/Disc";
+//import Disc from "./components/ChannelBgs/Disc";
 import Fish from "./components/ChannelBgs/Fish";
 import Horse from "./components/ChannelBgs/Horse";
 import Frog from "./components/ChannelBgs/Frog";
