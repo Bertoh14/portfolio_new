@@ -17,7 +17,8 @@ const Video1 = "/assets/Lil_Fishsticks.mp4";
 const Video2 = "/assets/Trojan_Course.mp4";
 const Video3 = "/assets/Forest_Foodies.mp4";
 const Video4 = "/assets/Sashimi.mp4";
-const Video5 = "/assets/QuadTask.mp4"
+const Video5 = "/assets/DisasterDeck.mp4";
+const Video6 = "/assets/KnifeArena.mp4";
 
 // ChannelBg Components
 import Disc from "./components/ChannelBgs/Disc";
@@ -25,6 +26,8 @@ import Fish from "./components/ChannelBgs/Fish";
 import Horse from "./components/ChannelBgs/Horse";
 import Frog from "./components/ChannelBgs/Frog";
 import RainbowFish from "./components/ChannelBgs/RainbowFish";
+import Disaster from "./components/ChannelBgs/Disaster";
+import Ghost from "./components/ChannelBgs/Ghost";
 
 // Define the type for a single channel
 type Channel = {
@@ -54,7 +57,7 @@ const webChannels: Channels = {
     component: Fish,
     channelName: "Lil Fishsticks",
     channelText: "What happens when you flush your presumed dead pet fish down the toilet? Of course he'll grow legs from the toxic waste and platform his way back home! Help guide Freddie through the sewer system to solve puzzles, avoid enemies, and find the exit! There are many different ecosystems that Freddie will have to navigate his way through. Will you be able to return him to his owner?",
-    channelRoles: "Game Designer, Game Developer, Level Designer, Sound Designer"
+    channelRoles: "Game Designer, Game Programmer, Level Designer, Sound Designer"
   },
   2: {
     title: "The Trojan Course",
@@ -65,7 +68,7 @@ const webChannels: Channels = {
     component: Horse,
     channelName: "The Trojan Course",
     channelText: "In The Trojan Course, create different-shaped Trojan Horses to withstand the obstacle course ahead of you! With our course preview system, create an optimized horse that'll survive to reach the Gates of Troy! With dozens of different courses, and many different customizable blocks, will you be able to sneak your way behind enemy lines?",
-    channelRoles: "Game Designer, Game Developer, Level Designer, Sound Designer",
+    channelRoles: "Game Designer, Game Programmer, Level Designer, Sound Designer",
   },
   3: {
     title: "Forest Foodies",
@@ -86,17 +89,29 @@ const webChannels: Channels = {
     component: RainbowFish,
     channelName: "Sashimi",
     channelText: "Sashimi is a school project designed as a puzzle-platformer for children. Our school program partnered with a local middle school to collaborate with middle school students. We were able to tailor the gameplay mechanics, artstlye, and sound designs to the children's preferences. Help this Rainbow Fish migrate to the ocean, while obtaining body-altering power-ups along the way!",
-    channelRoles: "Game Designer, Level Designer, Art Designer",
+    channelRoles: "Game Designer, Game Programmer, Level Designer, Art Designer",
   },
   5: {
-    title: "QuadTask",
-    complete: false,
+    title: "Disaster Deck",
+    complete: true,
+    link: "https://leshibi.itch.io/disaster-deck-final",
     channelBg: Video5,
     isVideo: true,
-    component: Disc,
-    channelName: "QuadTask",
-    channelText: "This is one of the first games I've created! For my final project for a computing class, I created a multi-tasking game called QuadTask using p5.js. The goal of the game is to survive as long as you can in all 4 quadrants of the screen. Each quadrant has its own controls (space, left/right, up/down, click). Once you die in even one section, the game is over!",
-    channelRoles: "Game Designer, Game Developer, Art Designer",
+    component: Disaster,
+    channelName: "Disaster Deck",
+    channelText: "Disaster Deck was a game I created for the IndieCade Climate Jam 2025. With the theme of 'Natural & Unnatural Disasters', my team created a single-player card game to teach the player about natural disasters. Our game features cards that teach the player about natural disasters, how to prepare for them, and how to recover from them!",
+    channelRoles: "Sole Game Programmer, Game Designer",
+  },
+    6: {
+    title: "Knife Arena",
+    complete: true,
+    link: "https://leshibi.itch.io/knife-arena",
+    channelBg: Video6,
+    isVideo: true,
+    component: Ghost,
+    channelName: "Knife Arena",
+    channelText: "Knife Arena is the game my team created for Kenney Jam 2025. As the theme was simply 'Power', we created a single-player action game where the player must defeat multiple waves of enemies! You have two knives you can throw, and picking up your thrown knives gives you more power! Watch out, as if you don't pick up your knives in time, you'll lose your power!",
+    channelRoles: "Game Developer, Game Designer",
   },
 };
 
