@@ -79,10 +79,10 @@ const ChannelViewer: React.FC<ChannelViewerProps> = ({
     </div>
 
   {/* Text Section */}
-  <div className="h-full w-1/3 flex flex-col justify-start items-center p-6 text-neutral-800">
-    <h1 className="text-4xl font-serif mb-6"> {channelState.channelName}</h1>
+  <div className="h-full w-1/3 flex flex-col justify-start items-center p-6 text-neutral-800 min-h-0 overflow-y-auto">
+    <h1 className="text-4xl font-serif mb-3"> {channelState.channelName}</h1>
     <p className="text-xl text-center leading-relaxed text-justify font-sans mt-4 mb-4"> &emsp;{channelState.channelText}</p>
-    <p className="text-xl text-center leading-relaxed text-justify font-sans mb-4"> <strong className="font-bold">Roles: </strong>{channelState.channelRoles}</p>
+    <p className="text-lg text-center leading-snug font-sans mb-4"> <strong className="font-bold">Roles: </strong>{channelState.channelRoles}</p>
 
   </div>
 
